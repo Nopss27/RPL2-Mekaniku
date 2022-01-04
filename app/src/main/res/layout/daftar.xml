@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginRight="30dp"
+    android:layout_marginLeft="30dp"
+    tools:context=".formdaftar">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnkembalidaftar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+    <TextView
+        android:id="@+id/textdaftar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-50dp"
+        android:layout_marginLeft="60dp"
+        android:text="Daftar"
+        android:textColor="#808080"
+        android:textSize="35dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginRight="-50dp"
+        android:layout_marginTop="-670dp"
+        app:srcCompat="@drawable/logomekaniku" />
+
+    <EditText
+        android:id="@+id/namaLengkap"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="-570dp"
+        android:background="@drawable/inputcustom"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Masukan nama lengkap" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="-70dp"
+        android:text="Nama Lengkap"/>
+
+    <EditText
+        android:id="@+id/tanggalLahir"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/inputcustom"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:inputType="date"
+        android:hint="Contoh 2000-10-23"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="-70dp"
+        android:text="Tanggal lahir"/>
+
+    <EditText
+        android:id="@+id/noTelp"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@drawable/inputcustom"
+        android:drawablePadding="12dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Masukan No. Telephone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="-70dp"
+        android:text="No. telp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Jenis Kelamin"/>
+
+
+    <RadioGroup
+        android:id="@+id/jenisKelamin"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginTop="-10dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radio_Pria"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:checked="true"
+            android:text="Pria" />
+
+        <RadioButton
+            android:id="@+id/Wanita"
+            android:layout_width="79dp"
+            android:layout_height="41dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="-44dp"
+            android:checked="true"
+            android:text="Wanita" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@drawable/inputcustom"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:layout_marginTop="10dp"
+        android:hint="Contoh. 123@email.com"
+        android:inputType="textEmailAddress"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="Email"
+        android:layout_marginTop="-70dp"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/inputcustom"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Masukan username" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="Username"
+        android:layout_marginTop="-70dp"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@drawable/inputcustom"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:layout_marginTop="75dp"
+        android:hint=" Masukan Password"
+        android:inputType="textPassword"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="-70dp"
+        android:text="Password" />
+
+    <Button
+        android:id="@+id/btndaftar2"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="125dp"
+        android:text="Daftar"
+        android:textColor="#808080" />
+</LinearLayout>
